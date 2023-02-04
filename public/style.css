@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./dawn.jpg ) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.app {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 4500px;
+max-height: 550;
+    background: #fff;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.app>.screen {
+
+    display: none;
+
+}
+
+.app>.screen.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #3d5f6d;
+}
+
+.screen .form {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    max-width: 400px;
+    background-color: #052142d1;
+    border-radius: 30px;
+    box-shadow: 11px 18px 20px 2px black;
+
+}
+
+.screen .form-input {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+
+.screen h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #3dbcb4;
+    /* border-bottom: 4px solid #2439a9; */
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+ 
+
+.screen .form-input label {
+
+    display: block;
+    margin-bottom: 7px;
+    justify-items: center;
+    color: #d0ce08;
+    margin-left: 160px;
+    font-size: medium;
+
+}
+
+.screen .form-input input {
+    width: 90%;
+    padding: 10px;
+    border: 3px solid #000a16;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    box-shadow: 4px 3px 20px 4px #000000;
+}
+
+.screen .form-input button {
+    padding: 10px 20px;
+    background: #002ea0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    justify-content: center;
+    display: flex;
+    border-radius: 90px;
+    border: 2px solid black;
+    margin-left: 160px;
+     
+}
+.screen .form-input button:hover{
+    background-color: #1c55e5;
+}
+
+.chat-screen .header {
+
+    background: rgb(7, 48, 0);
+
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 2px solid rgb(4, 135, 0);
+    box-shadow: 5px rgb(28, 6, 6);
+
+}
+
+.chat-screen .header .logo {
+
+    font-size: 18px;
+    justify-items: center;
+
+    color: #eee;
+
+    font-weight: 700;
+
+}
+
+.chat-screen .header button {
+
+    padding: 5px 10px;
+
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #eee;
+
+    font-size: 15px;
+
+    cursor: pointer;
+    outline: none;
+}
+.chat-screen .header button:hover{
+    background-color: rgb(4, 135, 0);
+}
+
+.chat-screen .messages {
+
+    height: calc(100% - 100px);
+    overflow: auto;
+
+    width: 100%;
+    background: #2d2740e7;
+    background-image: url( ./dawn.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.chat-screen .messages .message {
+    display: flex;
+
+    padding: 10px;
+}
+
+.chat-screen .messages .message>div {
+
+    max-width: 80%;
+
+    background: rgb(53 40 21);
+    border: 3px solid #0e0000;
+      border-radius: 10px;
+    box-shadow: 1px 7px 20px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+}
+
+.chat-screen .messages .message.my-message {
+    justify-content: flex-end;
+
+}
+
+.chat-screen .messages .message.other-message {
+    justify-content: flex-start;
+}
+
+.chat-screen .messages .message .name {
+
+    margin-bottom: 5px;
+    font-size: 13px;
+
+    color: #00cc3b9c;
+}
+
+
+.chat-screen .messages .message .text {
+    word-wrap: break-word;
+    color: rgb(255, 188, 100);
+
+}
+
+.chat-screen .messages .update {
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    color: #a8fbff;
+}
+
+.chat-screen .typebox {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-image: url( ./dawn.jpg) ;
+    margin-bottom: 5px;
+}
+
+.chat-screen .typebox input {
+    flex: 1;
+    height: 50px;
+    font-size: 18px;
+    background-color: #0d272e;
+    border: 2px solid #09213e;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    color: rgb(190, 195, 198);
+  
+}
+
+.chat-screen .typebox button {
+    width: 80px;
+    height: 100%;
+    background: #260039;
+    color: #eee;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 2px solid rgb(14, 0, 30);
+}
